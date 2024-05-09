@@ -1,3 +1,4 @@
+/*
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
@@ -41,3 +42,13 @@ class Calculator { //Calculator라는 class를 만들었음
         //각각 다른 함수가 호출이 된다.
     }
 }
+*/
+//Scope 설정
+import org.springframework.stereotype.Component
+import org.springframework.context.annotation.Scope
+import org.springframework.beans.factory.config.BeanDefinition.SCOPE_PROTOTYPE
+
+
+@Component
+@Scope(SCOPE_PROTOTYPE)
+class Dependency()
